@@ -26,6 +26,7 @@ public class Venta {
 	public Venta(long cedulacliente, long codigoventa, ArrayList<DetalleVenta> detalleventa, double ivaventa,
 			double totalventa, double valorventa) {
 		super();
+		this.detalleventa= new ArrayList<DetalleVenta>();
 		this.cedulacliente = cedulacliente;
 		this.codigoventa = codigoventa;
 		this.detalleventa = detalleventa;
@@ -89,4 +90,5 @@ public class Venta {
 	public void setValorventa(double valorventa) {
 		this.valorventa = valorventa;
 	}
+
 }
